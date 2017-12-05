@@ -5,4 +5,6 @@ class User < ApplicationRecord
 
 	scope :active_user, -> {where(:active=>true)}
 	scope :inactive_user, -> {where(:active=>false)}
+
+	@user
 end
